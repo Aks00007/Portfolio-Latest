@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush Kumar Singh - Frontend Developer</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="./assets/AKS_Logo_Portfolio_Transparent.png">
+</head>
+
+<body>
+    <div class="left">
+        <div class="logo"></div>
+        <hr class="line">
+        <div class="left-links">
+            <a href="./index.html" class="nav-link" id="home-link"><img src="./assets/home.svg" alt="home"></a>
+            <a href="./about.html" class="nav-link" id="about-link"><img src="./assets/about.svg" alt="about"></a>
+            <a href="./project.html" class="nav-link" id="project-link"><img src="./assets/projects.svg"
+                    alt="projects"></a>
+            <a href="./contact.html" class="nav-link" id="contact-link"><img src="./assets/contact.svg"
+                    alt="contact"></a>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="section-1">
+            <div class="container-sec1">
+            </div>
+        </div>
+        <div class="section-2">
+            <div class="container-sec2">
+                <div class="hero-text">
+                    <div>Hi there! I am</div>
+                    <h1><span id="element"></span></h1>
+                    <div>A Front-End Developer passionate about <br> creating interavtive applications and experiences
+                        on <br>
+                        the web.
+                    </div>
+                </div>
+                <div class="buttons">
+                    <span class="resume">
+                        <button><a target="_blank" href="./Resume.pdf">Resume</a></button>
+                    </span>
+                    <span class="other-links">
+                        <button class="btn-1"><a target="_blank"
+                                href="https://www.linkedin.com/in/aayush-kumar-singh-9b8680293"><img
+                                    src="./assets/linkedin.png" alt=""></a></button>
+                        <button class="btn-2"><a target="_blank" href="https://github.com/Aks00007/"><img
+                                    src="./assets/github.png" alt=""></a></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['AAYUSH KUMAR SINGH'],
+            typeSpeed: 70,
+            backSpeed: 50,
+            backDelay: 2000,
+            loop: true
+        });
+
+        const currentPage = window.location.pathname.split("/").pop();
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === `./${currentPage}`) {
+                link.classList.add("is-active");
+            }
+        });
+    </script>
+</body>
+
+</html>
