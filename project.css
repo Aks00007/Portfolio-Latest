@@ -26,9 +26,29 @@ body {
 
 .logo:hover {
     cursor: pointer;
+    filter: invert();
+}
+
+.hamburger {
+    height: 45px;
+    width: 45px;
+    background-color: rgb(76 122 88);
+    border-radius: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+}
+
+.hamburger img {
+    height: 30px;
+}
+
+.hamburger img:hover {
+    filter: invert();
     transform: scale(1.1);
     transition: 0.3s;
-    filter: invert();
 }
 
 .line {
@@ -42,7 +62,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 70px;
-    margin: 110px 0;
+    padding: 110px 0;
+    border-top: 2px solid;
 }
 
 .left-links img {
@@ -60,7 +81,7 @@ body {
     transform: scale(1.2);
     transition: 0.3s;
     filter: invert();
-    border-bottom: 2px solid black; 
+    border-bottom: 2px solid black;
     padding-bottom: 4px;
 }
 
@@ -72,42 +93,149 @@ body {
 
 .container {
     height: 85vh;
-    width: 72vw;
+    width: auto;
     display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 7vh auto;
     padding: 0 5vw;
-    border-radius: 3%;
+    border-radius: 20px;
     background-color: white;
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.489);
 }
 
 .container h1 {
     font-size: 2.5rem;
-    margin: 20px;
+    margin: 50px;
     text-decoration: underline;
 }
 
 .carousel-container {
-    height: 70vh;
-    width: 70vw;
+    height: 60vh;
+    width: auto;
     margin: auto;
-  }
-  
-  .carousel-container .carousel-inner,
-  .carousel-container .carousel-item,
-  .carousel-container .carousel-item img {
+}
+
+.carousel-container .carousel-inner,
+.carousel-container .carousel-item,
+.carousel-container .carousel-item img {
     height: 100%;
     width: 100%;
     object-fit: contain;
-  }
-  
+}
+
 .carousel-caption {
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(6px);
     border-radius: 10px;
     padding: 1rem 2rem;
-    display: inline-block;  
+    display: inline-block;
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+    body {
+        display: block;
+    }
+
+    .left {
+        height: 15vh;
+        width: auto;
+    }
+
+    .logo {
+        height: 15vh;
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+
+    .left-links {
+        position: absolute;
+        left: -100%;
+    }
+
+    .right {
+        height: auto;
+        width: auto;
+        display: flex;
+    }
+
+    .container {
+        height: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-radius: 40px;
+        padding: 15px 0;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+        margin: 8px;
+    }
+
+    .carousel-container {
+        height: 60vh;
+        width: auto;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 750px) {
+    body {
+        display: block;
+    }
+
+    .left {
+        height: 15vh;
+        width: auto;
+    }
+
+    .logo {
+        height: 15vh;
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+
+    .left-links {
+        position: absolute;
+        left: -100%;
+    }
+
+    .right {
+        height: auto;
+        width: auto;
+        display: flex;
+    }
+
+    .container {
+        height: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-radius: 40px;
+        padding: 15px 0;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+        margin: 8px;
+    }
+
+    .carousel-container {
+        height: 60vh;
+        width: auto;
+    }
+
+    .d-md-block {
+        height: 18vh;
+        padding: 10px;
+    }
 }

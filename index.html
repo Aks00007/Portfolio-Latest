@@ -12,7 +12,9 @@
 <body>
     <div class="left">
         <div class="logo"></div>
-        <hr class="line">
+        <div class="hamburger">
+            <img src="./assets/hamburger.svg" alt="">
+        </div>
         <div class="left-links">
             <a href="./index.html" class="nav-link" id="home-link"><img src="./assets/home.svg" alt="home"></a>
             <a href="./about.html" class="nav-link" id="about-link"><img src="./assets/about.svg" alt="about"></a>
@@ -25,8 +27,7 @@
 
     <div class="right">
         <div class="section-1">
-            <div class="container-sec1">
-            </div>
+            <div class="container-sec1"></div>
         </div>
         <div class="section-2">
             <div class="container-sec2">
@@ -40,7 +41,7 @@
                 </div>
                 <div class="buttons">
                     <span class="resume">
-                        <button><a target="_blank" href="./Resume.pdf">Resume</a></button>
+                        <button><a target="_blank" href="./assets/Resume.pdf">Resume</a></button>
                     </span>
                     <span class="other-links">
                         <button class="btn-1"><a target="_blank"
@@ -70,6 +71,20 @@
             if (link.getAttribute("href") === `./${currentPage}`) {
                 link.classList.add("is-active");
             }
+        });
+    </script>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const myLeft = document.querySelector(".left-links");
+        hamburger.addEventListener("click", () => {
+            const isOpen = myLeft.style.left === "0px";
+            myLeft.style.left = isOpen ? "-100%" : "0";
+            hamburger.style.opacity = 0;
+
+            setTimeout(() => {
+                hamburger.src = isOpen ? "/assets/hamburger.svg" : "/assets/cross.svg";
+                hamburger.style.opacity = 1;
+            }, 150);
         });
     </script>
 </body>
