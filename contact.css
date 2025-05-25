@@ -206,8 +206,12 @@ body {
     }
 
     .left-links {
+        width: 30vw;
         position: absolute;
         left: -100%;
+        background-color: rgb(76 122 88);
+        z-index: 10;
+        transition: all .3s;
     }
 
     .right {
@@ -269,8 +273,12 @@ body {
     }
 
     .left-links {
+        width: 30vw;
         position: absolute;
         left: -100%;
+        background-color: rgb(76 122 88);
+        z-index: 10;
+        transition: all .3s;
     }
 
     .right {

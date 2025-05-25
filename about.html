@@ -74,6 +74,20 @@
             }
         });
     </script>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const myLeft = document.querySelector(".left-links");
+        hamburger.addEventListener("click", () => {
+            const isOpen = myLeft.style.left === "0px";
+            myLeft.style.left = isOpen ? "-30%" : "0";
+            hamburger.style.opacity = 0;
+
+            setTimeout(() => {
+                hamburger.src = isOpen ? "/assets/hamburger.svg" : "/assets/cross.svg";
+                hamburger.style.opacity = 1;
+            }, 150);
+        });
+    </script>
 </body>
 
 </html>
