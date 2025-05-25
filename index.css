@@ -223,8 +223,12 @@ body {
     }
 
     .left-links {
+        width: 30vw;
         position: absolute;
-        right: -100%;
+        left: -100%;
+        background-color: rgb(76 122 88);
+        z-index: 10;
+        transition: all .3s;
     }
 
     .right {
