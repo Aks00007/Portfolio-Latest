@@ -64,21 +64,22 @@
             backDelay: 2000,
             loop: true
         });
-
-        const currentPage = window.location.pathname.split("/").pop();
+        
+        const currentPage = window.location.pathname.split("/").pop() || "index.html";
         const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
             if (link.getAttribute("href") === `./${currentPage}`) {
                 link.classList.add("is-active");
             }
         });
+
     </script>
     <script>
         const hamburger = document.querySelector(".hamburger");
         const myLeft = document.querySelector(".left-links");
         hamburger.addEventListener("click", () => {
             const isOpen = myLeft.style.left === "0px";
-            myLeft.style.left = isOpen ? "-30%" : "0";
+            myLeft.style.left = isOpen ? "-35%" : "0";
             hamburger.style.opacity = 0;
 
             setTimeout(() => {
