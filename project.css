@@ -113,7 +113,7 @@ body {
 
 .carousel-container {
     height: 60vh;
-    width: auto;
+    width: 60vw;
     margin: auto;
 }
 
@@ -126,8 +126,10 @@ body {
 }
 
 .carousel-caption {
+    height: auto;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border-radius: 10px;
     padding: 1rem 2rem;
     display: inline-block;
@@ -185,6 +187,24 @@ body {
     .carousel-container {
         height: 60vh;
         width: auto;
+    }
+
+    .d-block h5 {
+        font-size: 9px;
+        padding: 0;
+        margin: 2px;
+    }
+
+    .carousel-caption {
+        top: 58%;
+        height: 7vh !important;
+        padding-top: 5px !important;
+    }
+
+    .d-block {
+        height: 10vh;
+        font-size: 5px;
+        padding: 0;
     }
 }
 
