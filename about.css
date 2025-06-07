@@ -217,12 +217,13 @@ body {
     }
 
     .left-links {
-        width: 30vw;
+        width: 32vw;
         position: absolute;
         left: -100%;
         background-color: rgb(76 122 88);
         z-index: 10;
         transition: all .3s;
+        border-radius: 0 0 16px 0;
     }
 
     .right {
@@ -306,7 +307,7 @@ body {
     }
 
     .left-links {
-        width: 32vw;
+        width: 20vw;
         position: absolute;
         left: -100%;
         background-color: rgb(76 122 88);
