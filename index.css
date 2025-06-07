@@ -224,17 +224,11 @@ body {
 
     .left-links {
         width: 32vw;
-        height: 100vh;
         position: absolute;
         left: -100%;
         background-color: rgb(76 122 88);
         z-index: 10;
         transition: all .3s;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        padding: 23px 0;
-        border-top: 2px solid;
         border-radius: 0 0 16px 0;
     }
 
