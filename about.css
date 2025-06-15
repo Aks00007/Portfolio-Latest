@@ -102,13 +102,14 @@ body {
 }
 
 .sec-1 {
-    height: 20vh;
+    height: 17vh;
     max-width: 1000px;
     display: block;
     justify-content: center;
     align-items: center;
     text-align: justify;
     margin: auto 10%;
+    padding: 2% 0;
 }
 
 .sec-1 span {
@@ -132,7 +133,7 @@ body {
 }
 
 .sec-2 {
-    height: 20vh;
+    height: 25vh;
     max-width: 700px;
     display: block;
     justify-content: center;
@@ -166,13 +167,13 @@ body {
 }
 
 .sec-3 {
-    height: 20vh;
+    height: 32vh;
     max-width: 700px;
     display: block;
     justify-content: center;
     align-items: center;
     text-align: justify;
-    margin-top: 5%;
+    margin-top: 1%;
     margin-left: 11%;
 }
 
@@ -235,13 +236,13 @@ body {
     .box {
         height: auto;
         width: auto;
-        margin: 4%;
-        padding: 10px;
+        margin: 10% 4%;
+        padding: 25px 10px;
         border-radius: 0px 30px 0px 30px;
     }
 
     .sec-1 {
-        height: 31vh;
+        height: 15vh;
         margin: auto 3%;
     }
 
@@ -258,7 +259,7 @@ body {
     }
 
     .sec-2 {
-        height: 28vh;
+        height: 21vh;
         margin: auto 3%;
     }
 
@@ -271,7 +272,7 @@ body {
     }
 
     .sec-3 {
-        height: 40vh;
+        height: 25vh;
         margin: auto 3%;
     }
 
