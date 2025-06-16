@@ -38,7 +38,7 @@
               <img class="img" src="./assets/project-1.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-block">
                 <h5>Netfix Clone</h5>
-                <p>A responsive Netflix clone using HTML and CSS, replicating the platform's landing page and UI design.
+                <p>Developed a pixel-perfect Netflix UI clone to strengthen my frontend layout and styling skills—focused on clean design and responsive UI. <a href="https://netflix-clone-gamma-tawny.vercel.app/" target="_blank">[Link]</a>
                 </p>
               </div>
             </div>
@@ -46,23 +46,24 @@
               <img class="img" src="./assets/project-2.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-block">
                 <h5>Spotify Clone</h5>
-                <p>A responsive Spotify clone using HTML, CSS, and JavaScript, replicating core UI features and music
-                  playback interface.</p>
+                <p>Created a responsive Spotify clone with custom audio controls and sleek UI—enhanced my frontend skills and layout techniques. <a href="https://spotify-clone-psi-two.vercel.app/" target="_blank">[Link]</a></p>
               </div>
             </div>
             <div class="carousel-item">
               <img class="img" src="./assets/project-3.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-block" style="color: black;">
                 <h5>Todo-List App</h5>
-                <p>A responsive To-Do List web app using HTML, CSS, JavaScript, and React, featuring dynamic task
-                  management and real-time updates and stores tasks locally on device.</p>
+                <p>Tech: React, Styled‑Components, LocalStorage
+                  Built a responsive to-do list app with persistent storage and task filters—sharpened my React hooks and component logic.</p>
               </div>
             </div>
             <div class="carousel-item">
               <img class="img" src="./assets/project-4.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-block" style="color: black;">
-                <h5>Personal Password Manager</h5>
-                <p>A responsive Personal Password Manager web app using HTML, CSS, JavaScript, and React, which stores your site's credentials dynamically. Prepared both Local Storage and MongoDB version</p>
+                <h5><b>Personal Password Manager</b></h5>
+                <p>Tech: React, Styled‑Components, LocalStorage
+                  Built a secure password management app with theme toggle and validation—improved my React hooks and UI
+                  logic. <a href="https://pass-vault-seven.vercel.app/" target="_blank">[Link]</a></p>
               </div>
             </div>
           </div>
@@ -91,19 +92,19 @@
     });
   </script>
   <script>
-        const hamburger = document.querySelector(".hamburger");
-        const myLeft = document.querySelector(".left-links");
-        hamburger.addEventListener("click", () => {
-            const isOpen = myLeft.style.left === "0px";
-            myLeft.style.left = isOpen ? "-35%" : "0";
-            hamburger.style.opacity = 0;
+    const hamburger = document.querySelector(".hamburger");
+    const myLeft = document.querySelector(".left-links");
+    hamburger.addEventListener("click", () => {
+      const isOpen = myLeft.style.left === "0px";
+      myLeft.style.left = isOpen ? "-35%" : "0";
+      hamburger.style.opacity = 0;
 
-            setTimeout(() => {
-                hamburger.src = isOpen ? "/assets/hamburger.svg" : "/assets/cross.svg";
-                hamburger.style.opacity = 1;
-            }, 150);
-        });
-    </script>
+      setTimeout(() => {
+        hamburger.src = isOpen ? "/assets/hamburger.svg" : "/assets/cross.svg";
+        hamburger.style.opacity = 1;
+      }, 150);
+    });
+  </script>
 </body>
 
 </html>
