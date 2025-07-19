@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush Kumar Singh - Frontend Developer</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+</head>
+
+<body>
+    <div class="left">
+        <div class="logo"></div>
+        <div class="hamburger">
+            <img src="./assets/hamburger.svg" alt="">
+        </div>
+        <div class="left-links">
+            <a href="./index.html" class="nav-link" id="home-link"><img src="./assets/home.svg" alt="home"></a>
+            <a href="./project.html" class="nav-link" id="project-link"><img src="./assets/projects.svg"
+                    alt="projects"></a>
+            <a href="./about.html" class="nav-link" id="about-link"><img src="./assets/about.svg" alt="about"></a>
+            <a href="./contact.html" class="nav-link" id="contact-link"><img src="./assets/contact.svg"
+                    alt="contact"></a>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="box">
+            <div class="sec-1">
+                <span>
+                    <div class="heading-1">Hi! I'm Aayush Kumar Singh<img src="./assets/hand.svg" alt="hand"></div>
+                </span>
+                <p>I'm a passionate frontend developer with a knack for creating beautiful and functional web
+                    applications.
+                    I love turning ideas into reality and am always eager to learn new technologies.</p>
+            </div>
+
+            <div class="sec-2">
+                <span>
+                    <img src="./assets/computer.png" alt="computer">
+                    <div class="heading-2">Tech Stack</div>
+                </span>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React, Tailwind CSS, Bootstrap</li>
+                    <li>Git & Github</li>
+                    <li>MySql, MongoDB</li>
+                </ul>
+            </div>
+
+            <div class="sec-3">
+                <span>
+                    <img src="./assets/target.png" alt="goals">
+                    <div class="heading-2">Goals</div>
+                </span>
+                <ul>
+                    <li>Land a Frontend Developer Job</li>
+                    <li>Build real-world projects</li>
+                    <li>Keep learning and improving</li>
+                    <li>To contribute to open-source projects</li>
+                    <li>To learn new technologies and frameworks</li>
+                    <li>To build my own startup</li>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const currentPage = window.location.pathname.split("/").pop();
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === `./${currentPage}`) {
+                link.classList.add("is-active");
+            }
+        });
+    </script>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const myLeft = document.querySelector(".left-links");
+        hamburger.addEventListener("click", () => {
+            const isOpen = myLeft.style.left === "0px";
+            myLeft.style.left = isOpen ? "-35%" : "0";
+            hamburger.style.opacity = 0;
+
+            setTimeout(() => {
+                hamburger.src = isOpen ? "/assets/hamburger.svg" : "/assets/cross.svg";
+                hamburger.style.opacity = 1;
+            }, 150);
+        });
+    </script>
+</body>
+
+</html>
