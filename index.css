@@ -95,10 +95,10 @@ body {
     height: 60%;
     width: 65%;
     border-radius: 50%;
-    background-image: url(./assets/pic.jpg);
+    background-image: url(./assets/pic.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
     margin-top: 150px;
     margin-left: 150px;
     box-shadow: 20px 20px 40px rgba(22, 23, 22, 0.872);
