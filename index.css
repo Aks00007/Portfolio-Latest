@@ -261,7 +261,7 @@ body {
         height: 250px;
         width: 250px;
         border-radius: 50%;
-        background-image: url(./assets/pic.jpg);
+        background-image: url(./assets/pic.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -363,7 +363,7 @@ body {
         max-width: 300px;
         max-height: 300px;
         border-radius: 50%;
-        background-image: url(./assets/pic.jpg);
+        background-image: url(./assets/pic.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
