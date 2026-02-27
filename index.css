@@ -263,7 +263,7 @@ body {
         border-radius: 50%;
         background-image: url(./assets/pic.png);
         background-size: cover;
-        background-position: center;
+        background-position: top;
         background-repeat: no-repeat;
         box-shadow: 20px 20px 40px rgba(22, 23, 22, 0.872);
         margin: 0 auto;
@@ -365,7 +365,7 @@ body {
         border-radius: 50%;
         background-image: url(./assets/pic.png);
         background-size: cover;
-        background-position: center;
+        background-position: top;
         background-repeat: no-repeat;
         box-shadow: 20px 20px 40px rgba(22, 23, 22, 0.872);
         margin: 0 auto;
